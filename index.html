@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Резюме</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
     <section class="information">
-    <h1>Вакансия: Junior Frontend Developer</h1>
-    <img src="img/photo.jpg">
-    <p>Имя: Кирилл</p>
-    <p><a href="https://github.com/kirillchur/lvlUP">Репозиторий GitHub</a> </p>
-    <p>Опыт работы: нет</p>
-    <br clear="all">
+        <h1>Вакансия: Junior Frontend Developer</h1>
+        <img src="img/photo.jpg">
+        <span>Имя: Кирилл</span>
+        <p><a href="https://github.com/kirillchur/lvlUP">Репозиторий GitHub</a> </p>
+        <span>Опыт работы: нет</span>
+        <br clear="all">
     </section>
     <section class="date">
-    <form>
-       <h3>Дата собеседования:</h3> <input type="date" value="2019-04-01">
-       <i class="fas fa-calendar-alt"></i>
-    </form>
+        <form>
+            <h3>Дата собеседования:</h3> <input type="date" value="2019-04-01">
+            <i class="fas fa-calendar-alt"></i>
     </section>
     <section class="englishskill">
         <h3>Уровень английского: </h3>
         <input name="engskill" type="radio" value="bad"> Плохо
         <input name="engskill" type="radio" value="mid"> Средне
-        <input name="engskill" type="radio" value="good" checked > Хорошо
-        <input name="engskill" type="radio" value="excellent" > Превосходно
+        <input name="engskill" type="radio" value="good" checked> Хорошо
+        <input name="engskill" type="radio" value="excellent"> Превосходно
     </section>
     <section class="skill">
         <h3>Ключевые навыки:</h3>
@@ -42,47 +44,54 @@
     <section class="communication">
         <h3>Коммуникабельность:</h3>
         <select>
-            <option>Общительность</option>
-            <option>Дружелюбие</option>
-            <option>Варит вкусный кофе</option>
-            <option>Забивает лучшие кальяны</option>
+            <option value="" selected disabled hidden>Выбрать из списка</option>
+            <option value="1">Общительность</option>
+            <option value="2">Дружелюбие</option>
+            <option value="3">Варит вкусный кофе</option>
+            <option value="4">Забивает лучшие кальяны</option>
         </select>
     </section>
     <section class="salary">
         <h3>Желаемая з/п:</h3>
-        <input type="text" value="100 500 000 000 €$"> <button>Введите значение...</button>
+        <input type="number" value="100 000" placeholder="Введите значение...">
     </section>
     <section class="suit">
         <h3>Подходит по критериям:</h3>
-        <input type="checkbox" value="eng"> Знание английского
-        <input type="checkbox" value="salary"> Оклад
-        <input type="checkbox" value="skill"> Навыки
-        <input type="checkbox" value="lol" checked> Сразу видно, что свой человек
+        <input type="checkbox" id="check1"><label for="check1">Знание английского</label>
+        <input type="checkbox" id="check2"><label for="check2">Оклад</label>
+        <input type="checkbox" id="check3"><label for="check3">Навыки</label>
+        <input type="checkbox" id="check4"><label for="check4">Сразу видно, свой человек</label><Br>
     </section>
     <section class="table">
         <h3>Образование, курсы и т.п.</h3>
         <table>
-            <tr>
-              <th>№</th>
-              <th>Сроки обучения</th>
-              <th>Наименование учебного заведения</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>25.03.19-...</td>
-                <td>LevelUP</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Учиться никогда не поздно</td>
-                <td>Учебное заведение</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Учиться никогда не поздно</td>
-                <td>Учебное заведение</td>
-            </tr>   
-          </table>
+            <thead>
+                <tr>
+                    <td>№</td>
+                    <td>Сроки обучения</td>
+                    <td>Наименование учебного заведения</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>25.03.19-...</td>
+                    <td>LevelUP</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Учиться никогда не поздно</td>
+                    <td>Учебное заведение</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Учиться никогда не поздно</td>
+                    <td>Учебное заведение</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+    </form>
 </body>
+
 </html>

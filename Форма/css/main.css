@@ -91,6 +91,8 @@ h2 {
 .message-time{
     margin-top: 15px;
     margin-right: 40px;
+    font-style: italic;
+    color: white;
 }
 
 .message-time p{
